@@ -12,7 +12,7 @@ class _HomeState extends State<Home> {
   bool updateIt = true;
 
   void updateMinute() async {
-    WorldTime instance = WorldTime(location: data['location'],flag: data['flag'],url: data['url']);
+    WorldTime instance = WorldTime(location: data['location'],flag: data['flag'],url: data['url'],);
     await instance.getTime();
     setState(() {
 
@@ -86,7 +86,7 @@ class _HomeState extends State<Home> {
                           color: Colors.grey[400],
                         )),
                         SizedBox(width:10.0),
-                        CircleAvatar(backgroundImage: AssetImage('assets/${data['flag']}'), radius: 15g,)
+                        CircleAvatar(backgroundImage: AssetImage('assets/${data['flag']}'), radius: 15,)
                         //Image(image:AssetImage('assets/${data['flag']}',), height: 25.0, width: 25.0,)
                       ],
                     ),

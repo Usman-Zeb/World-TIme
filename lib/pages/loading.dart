@@ -14,7 +14,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
   String time = 'Loading';
   void setupWorldTime() async
   {
-    WorldTime instance = WorldTime(location: 'Karachi', flag: 'pakistan.png', url: 'Asia/Karachi' );
+    WorldTime instance = WorldTime(location: 'Karachi', flag: 'pakistan.png', url: 'Asia/Karachi');
     await instance.getTime();
     //print(instance.time);
     setState(() {

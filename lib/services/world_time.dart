@@ -10,7 +10,7 @@ class WorldTime
   String flag;
   String url;
   bool isDayTime;
-  WorldTime({this.location,this.flag,this.url});
+  WorldTime({this.location,this.flag,this.url,});
 
   Future<void> getTime() async
   {
@@ -36,7 +36,7 @@ class WorldTime
     catch (e)
     {
       print('Caught an error: $e');
-      time = 'could not get time date. sorry bitch';
+      time = 'could not get time date.';
     }
 
   }
